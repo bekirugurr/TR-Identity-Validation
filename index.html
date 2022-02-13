@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Identity Validation</title>
+    <style>
+
+    
+    </style>
+</head>
+<body>
+    <label for="idnumber"><h1>Identity Validation</h1></label>
+
+    
+        <input type="text" name="idnumber" id="idnumber" placeholder="Enter your ID number" maxlength= "11" >
+        
+
+        <button id="button">Check Out</button>
+
+        <h3>Do you now valid TR Identity Number must follow some rules?</h3>
+        <h2>Valid TR Identity Number structure rules:</h2>
+        <ol>
+            <li>TR Identity Number actually consists of 9 digits, the last 2 digits have been added for control/verification purposes.
+            </li>
+            <li>The ID number cannot start with 0.
+            </li>
+            <li>The 10th digit is obtained by using the first 9 digits, and the 11th digit is obtained by using the first 10 digits.
+            </li>
+            <li>Add the digits in the 1st, 3rd, 5th, 7th and 9th digits, multiply by 7 and subtract the sum of the digits in the 2nd, 4th, 6th and 8th digits.
+            </li>
+            <li>The units digit of the result obtained (mod 10) gives the 10th digit of the ID number.
+            </li>
+            <li>When we add the first 9 digits of the ID number and the 10th digit obtained by the above method, the ones digit (mod 10) gives the 11th digit.
+            </li>
+        </ol>
+
+
+ 
+
+
+
+    <script src="app.js"></script>
+
+</body>
+</html>
